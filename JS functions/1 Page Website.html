@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <style>
+    .container {
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    .bar1,
+    .bar2,
+    .bar3 {
+      width: 35px;
+      height: 5px;
+      background-color: #333;
+      margin: 6px 0;
+      transition: 0.4s;
+    }
+
+    .change .bar1 {
+      -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+      transform: rotate(-45deg) translate(-9px, 6px);
+    }
+
+    .change .bar2 {
+      opacity: 0;
+    }
+
+    .change .bar3 {
+      -webkit-transform: rotate(45deg) translate(-8px, -8px);
+      transform: rotate(45deg) translate(-8px, -8px);
+    }
+
+    body {
+      margin: 0;
+    }
+
+    .icon-bar {
+      width: 100%;
+      background-color: #555;
+      overflow: auto;
+    }
+
+    .icon-bar a {
+      float: left;
+      width: 20%;
+      text-align: center;
+      padding: 12px 0;
+      transition: all 0.3s ease;
+      color: white;
+      font-size: 36px;
+    }
+
+    .icon-bar a:hover {
+      background-color: #000;
+    }
+
+    .active {
+      background-color: #04aa6d;
+    }
+  </style>
+  <body>
+    <div class="container" onclick="myFunction(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+
+    <div class="icon-bar">
+      <a class="active" href="#"><i class="fa fa-home"></i></a>
+      <a href="#"><i class="fa fa-search"></i></a>
+      <a href="#"><i class="fa fa-envelope"></i></a>
+      <a href="#"><i class="fa fa-globe"></i></a>
+      <a href="#"><i class="fa fa-trash"></i></a>
+    </div>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <button onclick="myFunction()">REJOICE IN THE LORD ALWAY</button>
+
+    <p id="demo"></p>
+
+    <style>
+      h1 {
+        color: red;
+      }
+
+      h2 {
+        color: purple;
+        background-color: burlywood;
+      }
+      button {
+        color: blue;
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>HELLO MY LOVELY LADY!!!</h1>
+
+    <h2>Our children Love JESUS!!</h2>
+
+    <img src="https://i.ytimg.com/vi/4EIwzB6rOHs/maxresdefault.jpg" alt="" />
+
+    <script>
+      function myFunction() {
+        document.getElementById("demo").innerHTML =
+          "BLESSING AND HONOR UNTO THE LAMB!!";
+      }
+    </script>
+  </body>
+</html>

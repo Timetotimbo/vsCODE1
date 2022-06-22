@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="demo"></h1>
+    <p id="2"></p>
+
+    <style>
+      p {
+        color: chartreuse;
+      }
+      h1 {
+        color: crimson;
+      }
+    </style>
+
+    <script>
+      function testFunction(x, y, z) {
+        return (x + 1) / y + z;
+      }
+
+      document.getElementById("demo").innerHTML = testFunction(3, 4, 5);
+    </script>
+  </body>
+</html>

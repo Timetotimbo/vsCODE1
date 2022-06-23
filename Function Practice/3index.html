@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="demo"></h1>
+    <script>
+      const absValue = (number) => {
+        if (number < 0) {
+          return -number;
+        }
+        return number;
+      };
+      document.getElementById("demo").innerHTML = absValue(-11); // => 10
+      absValue(5); // => 5
+
+      let myFunction = (a, b) => a * b;
+
+      function myFUnction(a, b) {
+        return a * b;
+      }
+
+      document.getElementById("demo").innerHTML = myFUnction(10, 17);
+    </script>
+  </body>
+</html>
+
+<!-- https://dmitripavlutin.com/6-ways-to-declare-javascript-functions/#1-function-declaration -->
